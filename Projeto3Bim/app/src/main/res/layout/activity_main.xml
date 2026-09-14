@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leitor Noturno"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textoLeitura"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Este é um texto de exemplo para o Leitor Noturno.
+
+O aplicativo utiliza o sensor de luz para adaptar automaticamente o tema e o brilho da tela de acordo com a iluminação do ambiente.
+
+Você pode substituir este texto pelo conteúdo que deseja ler."
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8dp"/>
+
+    <TextView
+        android:id="@+id/statusLeitura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leitura ativa"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/valorLux"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luminosidade: -- lux"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/botaoLeitura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pausar leitura"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
